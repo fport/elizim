@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="Container">
-        <div>Welcome the Elizim Shop</div>
-    </div>
-  );
+    <>
+      <Header/>
+      <div>Welcome the Elizim Shop</div>
+      <Footer/>
+    </>
+  )
 }
 
-export default App;
+export default App
