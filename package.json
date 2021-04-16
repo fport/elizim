@@ -1,0 +1,23 @@
+{
+  "name": "elizim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fport/elizim.git"
+  },
+  "keywords": [],
+  "author": "Libzipy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fport/elizim/issues"
+  },
+  "homepage": "https://github.com/fport/elizim#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
