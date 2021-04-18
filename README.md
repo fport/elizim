@@ -18,7 +18,7 @@ You have 2 things you can do:
 is here in case you want to take a look.
 Bear in mind that it's still in development!
 
-# A Little About API
+## A Little About API
 [`API Doc`](https://documenter.getpostman.com/view/15075082/TzJsfdQ2) is here!
 
 ## Development & Deploying Guide
