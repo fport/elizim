@@ -7,6 +7,7 @@ import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
 import CartScreen from './screens/CartScreen'
 
+/* Uygulamamizin route kismini belirledigimiz kisim */
 function App() {
   return (
     <Router>

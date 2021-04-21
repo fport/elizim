@@ -8,6 +8,7 @@ import {
   PRODUCT_DETAILS_FAIL
 } from '../constants/productConstans'
 
+/* async (dispatch) bu kisim redux thunk ile saglaniyor */
 export const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST })
