@@ -1,4 +1,4 @@
-# elizim 
+# Elizim
 <p align="center"><img src="https://user-images.githubusercontent.com/56169582/115157509-6b40a480-a092-11eb-9446-56b45f93172c.png" width="180px"/></p>
 
 
@@ -19,7 +19,8 @@ is here in case you want to take a look.
 Bear in mind that it's still in development!
 
 ## A Little About API
-[`API Doc`](https://documenter.getpostman.com/view/15075082/TzJsfdQ2) is here!
+[`API`](https://www.postman.com/collections/75b5009d9aa6aa5db2f2) is here!
+[`API Doc`](https://documenter.getpostman.com/view/13939961/TzJx6v8M) is here!
 
 ## Development & Deploying Guide
 
@@ -57,29 +58,3 @@ npm run build
 ```
 
 for building the project into static, deployable files.
-
-
-## Linting
-
-> Additionally, you can do `yarn run lint` to see formatting errors
-> and `yarn run lint:fix` to fix them.
-> Don't worry if you forgot to lint your code!
-> Someone will definitely fix it in another commit for you :smiley:
-
-
-## .vscode settings.json
-```
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "eslint.validate": ["js"],
-  "editor.formatOnSave": true
-}
-```
-## for disable eslint while coding
-```
-/* eslint-disable */
-```
-
-
