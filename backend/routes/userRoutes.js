@@ -1,9 +1,8 @@
 import express from 'express'
 const router = express.Router()
-import { getProducts, getProductById } from '../controllers/productController.js'
+import { authUser } from '../controllers/userController.js'
 
 /* belirttigimiz route uzerinde ve controllerimiz ile islemlerimizi yaptigimiz kisim */
-router.get('/', getProducts)
-router.get('/:id', getProductById)
+router.post('/login', authUser)
 
 export default router
