@@ -35,7 +35,8 @@ Next up, create yourself a `.env` file!
 # .env
 NODE_ENV = {your NODE_ENV api url here}
 PORT = {your PORT api url here}
-MONGO_URI ={your MONGO_URI api url here}
+MONGO_URI = {your MONGO_URI api url here}
+JWT_SECRET = {your JWT_SECRET api url here}
 ```
 
 Then you can do:
