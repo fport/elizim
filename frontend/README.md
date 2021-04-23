@@ -5,5 +5,5 @@
 - Constants
 - Reducer
 - Store => store.js => combineReducer
-- Action 
+- Action => we use redux thunk
 - View => screen

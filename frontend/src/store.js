@@ -3,13 +3,15 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { productListReducer, productDetailsReducer } from './reducers/productReducers'
 import { cartReducer } from './reducers/cartReducers'
+import { userLoginReducer } from './reducers/userReducers'
 
 /* src/reducer rootunda olusturdugumuz reducerlarimizi combineReducer ile 
 birlestiriyoruz. Redux DevTools kisminda gordugun stateler burdan geliyor */
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
-  cart: cartReducer
+  cart: cartReducer,
+  userLogin: userLoginReducer
 })
 
 /* localstorage'a daha onceden sepete urun eklendiyse bunu localstorage'a ekliyoruz ve
@@ -19,9 +21,14 @@ const cartItemsFromStorage = localStorage.getItem('cartItems')
   ? JSON.parse(localStorage.getItem('cartItems'))
   : []
 
+const userInfoFromStorage = localStorage.getItem('userInfo')
+  ? JSON.parse(localStorage.getItem('userInfo'))
+  : null
+
 /* Uygulama ilk calistiginda baslangic state olarak aldigi state */
 const initialState = {
-  cart: { cartItems: cartItemsFromStorage }
+  cart: { cartItems: cartItemsFromStorage },
+  userLogin: { userInfo: userInfoFromStorage }
 }
 
 const middleware = [thunk]
