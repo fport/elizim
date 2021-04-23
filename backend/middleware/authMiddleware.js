@@ -13,7 +13,7 @@ const protect = asyncHandler(async (req, res, next) => {
 
       const decoded = jwt.verify(token, process.env.JWT_SECRET) // { id: '607c73b33f90a982120acf3a', iat: 1619129300, exp: 1621721300 }
 
-      //buraya şifre almadan geçebiliriz, bunu return etmicez
+      //select('-password') => buraya şifre almadan geçebiliriz, bunu return etmicez
       req.user = await User.findById(decoded.id).select('-password')
 
       next()

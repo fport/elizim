@@ -1,3 +1,5 @@
+// Frontend kismindan gelen istekleri alip sonuc donduren kisim
+// Backend baslangic noktasi - butun projeyi burdan baslayarak takip ederek anlayabilirsiniz
 import express from 'express'
 import dotenv from 'dotenv'
 import colors from 'colors'
