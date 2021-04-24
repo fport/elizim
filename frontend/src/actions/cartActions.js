@@ -2,7 +2,8 @@ import axios from 'axios'
 import {
   CART_ADD_ITEM,
   CART_REMOVE_ITEM,
-  CART_SAVE_SHIPPING_ADDRESS
+  CART_SAVE_SHIPPING_ADDRESS,
+  CART_SAVE_PAYMENT_METHOD
 } from '../constants/cartConstans'
 
 /* async (dispatch, getState) bu kisim redux thunk ile saglaniyor */
@@ -40,4 +41,13 @@ export const saveShippingAddress = (data) => (dispatch, getState) => {
   })
 
   localStorage.setItem('shippingAddress', JSON.stringify(data))
+}
+
+export const savePaymentMethod = (data) => (dispatch, getState) => {
+  dispatch({
+    type: CART_SAVE_PAYMENT_METHOD,
+    payload: data
+  })
+
+  localStorage.setItem('paymentMethod', JSON.stringify(data))
 }
