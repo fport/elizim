@@ -3,7 +3,7 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { productListReducer, productDetailsReducer } from './reducers/productReducers'
 import { cartReducer } from './reducers/cartReducers'
-import { userLoginReducer } from './reducers/userReducers'
+import { userLoginReducer, userRegisterReducer } from './reducers/userReducers'
 
 /* src/reducer rootunda olusturdugumuz reducerlarimizi combineReducer ile 
 birlestiriyoruz. Redux DevTools kisminda gordugun stateler burdan geliyor */
@@ -11,7 +11,8 @@ const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
   cart: cartReducer,
-  userLogin: userLoginReducer
+  userLogin: userLoginReducer,
+  userRegister: userRegisterReducer
 })
 
 /* localstorage'a daha onceden sepete urun eklendiyse bunu localstorage'a ekliyoruz ve
