@@ -16,7 +16,7 @@ export const login = (email, password) => async (dispatch) => {
     const { data } = await axios.post('/api/users/login', { email, password }, config)
 
     dispatch({
-      tpye: USER_LOGIN_SUCCESS,
+      type: USER_LOGIN_SUCCESS,
       payload: data
     })
 
