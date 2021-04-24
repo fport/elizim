@@ -33,12 +33,17 @@ const userInfoFromStorage = localStorage.getItem('userInfo')
   ? JSON.parse(localStorage.getItem('userInfo'))
   : null
 
-/* Uygulama ilk calistiginda baslangic state olarak aldigi state */
+const shippingAddressFromStorage = localStorage.getItem('shippingAdress')
+  ? JSON.parse(localStorage.getItem('shippingAdress'))
+  : {}
+
+//  Uygulama ilk calistiginda baslangic state olarak aldigi state
 const initialState = {
-  cart: { cartItems: cartItemsFromStorage },
+  cart: { cartItems: cartItemsFromStorage, shippingAdress: shippingAddressFromStorage },
   userLogin: { userInfo: userInfoFromStorage }
 }
 
+// redux-thunk
 const middleware = [thunk]
 
 const store = createStore(
