@@ -33,13 +33,13 @@ const userInfoFromStorage = localStorage.getItem('userInfo')
   ? JSON.parse(localStorage.getItem('userInfo'))
   : null
 
-const shippingAddressFromStorage = localStorage.getItem('shippingAdress')
-  ? JSON.parse(localStorage.getItem('shippingAdress'))
+const shippingAddressFromStorage = localStorage.getItem('shippingAddress')
+  ? JSON.parse(localStorage.getItem('shippingAddress'))
   : {}
 
 //  Uygulama ilk calistiginda baslangic state olarak aldigi state
 const initialState = {
-  cart: { cartItems: cartItemsFromStorage, shippingAdress: shippingAddressFromStorage },
+  cart: { cartItems: cartItemsFromStorage, shippingAddress: shippingAddressFromStorage },
   userLogin: { userInfo: userInfoFromStorage }
 }
 
